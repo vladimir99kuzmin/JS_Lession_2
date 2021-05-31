@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">Lession 2</h1>
+        <article class="ex">
+            <h2>Ex 1.</h2>
+            <div class="ex1_box">
+                <p class="ex1_code">
+                    var a = 1, b = 1, c, d;<br>
+                    c = ++a; alert(c);<br>
+                    d = b++; alert(d);<br>
+                    c = (2+ ++a); alert(c);<br>
+                    d = (2+ b++); alert(d);<br>
+                    alert(a);<br>
+                    alert(b);<br>
+                </p>
+                <p class="ex1_desc">
+                    // объявление переменных <br>
+                    // имплементируется А, потом присваевается ее значение к C (значение А увеличивается на 1 и
+                    становится равно 2) <br>
+                    // к D присваевается значение B, потом B имплементируется (значение B увеличивается на 1 и
+                    становится равно 2) <br>
+                    // сначала имплементируется А, затем прибавляется к 2 и присваевается к С (значение А увеличивается
+                    еще на 1 и становится равно 3) <br>
+                    // сначала B прибавляется к 2 и присваевается к D, затем имплементируется B (значение B
+                    увеличивается еще на 1 и становится равно 3) <br>
+                    // выводим А <br>
+                    // выводим B <br>
+                </p>
+            </div>
+            <button onclick="execute_ex1()">TEST</button>
+            <p id="ex1_ans"></p>
+        </article>
+        <article class="ex">
+            <h2>Ex 2.</h2>
+            <div class="ex2_box">
+                <p class="ex2_code">
+                    var a = 2; <br>
+                    var x = 1 + (a *= 2);
+                </p>
+                <p class="ex2_desc">
+                    // к переменной A присваевается значение 2 <br>
+                    // к переменной А присваевается значение А*2, складывается с 1 и полученное значение присваевается к
+                    X <br>
+                </p>
+            </div>
+            <button onclick="execute_ex2()">TEST</button>
+            <p id="ex2_ans"></p>
+        </article>
+        <article class="ex">
+            <h2>Ex 3.</h2>
+            <form action="#" class="ex3_form">
+                Введите первое число (a): <input id="ex3_input1" type="number" required>
+                <br><br>
+                Введите второе число (b): <input id="ex3_input2" type="number" required>
+                <br><br>
+                <button onclick="execute_ex3()">Что у нас там?</button>
+                <br>
+                <p id="ex3_ans"></p>
+            </form>
+        </article>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
